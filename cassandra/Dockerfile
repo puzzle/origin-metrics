@@ -27,7 +27,7 @@ MAINTAINER Hawkular Metrics <hawkular-dev@lists.jboss.org>
 EXPOSE 9042 9160 7000 7001
 
 # The Cassandra version
-ENV CASSANDRA_VERSION="3.0.15" \
+ENV CASSANDRA_VERSION="3.4" \
     CASSANDRA_HOME="/opt/apache-cassandra" \
     HOME="/home/cassandra" \
     PATH="/opt/apache-cassandra/bin:$PATH" \
