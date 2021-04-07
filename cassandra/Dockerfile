@@ -74,7 +74,7 @@ COPY prometheus.yaml /opt/hawkular/prometheus_agent/prometheus.yaml
 # Create a 'Cassandra' user to own the directory and set it to be readable & writable by any user
 RUN groupadd -r cassandra -g 312 && \
     useradd -u 313 -r -g cassandra -d /opt/apache-cassandra -s /sbin/nologin cassandra && \
-    chown -R cassandra:cassandra /opt/apache-cassandra && \
+    chown -R 313:312 /opt/apache-cassandra && \
     chmod -R go+rw /opt/apache-cassandra && \
     mkdir $HOME && \
     chown -R cassandra:cassandra $HOME && \
