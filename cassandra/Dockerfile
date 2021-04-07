@@ -77,7 +77,7 @@ RUN groupadd -r cassandra -g 312 && \
     chown -R 313:312 /opt/apache-cassandra && \
     chmod -R go+rw /opt/apache-cassandra && \
     mkdir $HOME && \
-    chown -R cassandra:cassandra $HOME && \
+    chown -R 313:312 $HOME && \
     chmod -R go+rw $HOME
 
 USER 313
