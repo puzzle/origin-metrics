@@ -40,8 +40,8 @@ USER root
 RUN yum install -y -q bind-utils openssl && \
     yum clean all
 
-COPY apache-cassandra-${CASSANDRA_VERSION}-bin.tar.gz.md5 \
-     /tmp/
+#COPY apache-cassandra-${CASSANDRA_VERSION}-bin.tar.gz.md5 \
+#     /tmp/
 
 # Copy the Cassandra binary to the /opt directory
 RUN cd /opt; \
